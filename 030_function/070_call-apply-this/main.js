@@ -13,10 +13,11 @@ a.call(tim);
 function c(name, name1) {
     console.log('Hello ' + name + ' ' + name1);
 }
-
+// 第１引数に参照先のオブジェクトを渡す
 // 第２引数に関数の仮引数として与えることが可能
 c.call(tim, 'Tim', 'Bob');
 
+// 第１引数に参照先のオブジェクトを渡す
 // 第２引数に配列として与え、呼び出す関数で順番に値が取得される
 c.apply(tim,['Tim','Tom'])
 
