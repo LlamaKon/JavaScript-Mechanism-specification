@@ -7,7 +7,7 @@ const person = {
     }
 }
 
-person.hello();
+person.hello(); 
 
 function fn(ref) {
     ref();

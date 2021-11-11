@@ -18,7 +18,7 @@ const person = {
     // }
 }
 
-// person.hello();
+person.hello();
 
 // 呼び出しより後にアロー関数を定義しているとエラー
 // const a = () => console.log('bye ' + this.name);
