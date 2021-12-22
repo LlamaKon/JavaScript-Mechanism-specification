@@ -30,3 +30,35 @@
 //   console.log(a.value);
 //   a = it.next();
 // }
+
+
+function genStep(min = 0, max = 20, step = 1) {
+    let i = min - step;
+
+    return {
+        next() {
+            i += step;
+
+            if (i > max) {
+                return {
+                    done: true
+                }
+            }
+            else {
+                return {
+                    done: false,
+                    value: i
+                }
+            }
+            
+        }
+    }
+}
+
+const it = genStep(4, 10, 2);
+let a = it.next();
+
+while(!a.done) {
+  console.log(a.value);
+  a = it.next();
+}
